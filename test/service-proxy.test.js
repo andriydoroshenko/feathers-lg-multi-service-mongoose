@@ -4,6 +4,15 @@ import randomstring from 'randomstring';
 import { Schema } from 'mongoose';
 import feathers from 'feathers';
 import multiService from '../src/multi-service';
+import modelsFactory from '../src/models-factory';
+
+modelsFactory.setup({
+  schemasCollection: {
+    test123: new Schema({
+      test: 'String'
+    })
+  }
+});
 
 const app = feathers();
 const locationGroup = randomstring.generate();

@@ -1,8 +1,8 @@
 {
-  "name": "feathers-lg-multi-service-mongoose",
-  "description": "A Feathers service wrapper of feathers-multi-service package",
+  "name": "feathers-lg-multi-service-mongoose-model-factory",
+  "description": "A Feathers service wrapper of feathers-multi-service package and modelsFactory",
   "version": "0.1.0",
-  "homepage": "https://github.com/dmitrovskiy/feathers-lg-multi-service-mongoose",
+  "homepage": "https://github.com/andriydoroshenko/feathers-lg-multi-service-mongoose",
   "main": "lib/",
   "keywords": [
     "feathers",
@@ -15,7 +15,7 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/dmitrovskiy/feathers-lg-multi-service-mongoose"
+    "url": "https://github.com/andriydoroshenko/feathers-lg-multi-service-mongoose"
   },
   "author": {
     "name": "Vlaidimir Dmitrovskiy",
@@ -23,7 +23,7 @@
     "url": "https://github.com/dmitrovskiy"
   },
   "bugs": {
-    "url": "https://github.com/dmitrovskiy/feathers-lg-multi-service-mongoose/issues"
+    "url": "https://github.com/andriydoroshenko/feathers-lg-multi-service-mongoose/issues"
   },
   "engines": {
     "node": ">= 4"
@@ -55,6 +55,7 @@
     "feathers-errors": "2.4.0",
     "feathers-mongoose": "3.5.3",
     "feathers-multi-service": "0.0.4",
+    "lodash": "^4.17.4",
     "mongoose": "4.6.5",
     "redrun": "^5.9.11"
   },
