@@ -6,7 +6,9 @@ export default ({
   collectionName = null,
   schema = null,
   dbUrl = app.get('dbUrl'),
-  dbPrefix = app.get('dbPrefix')
+  dbPrefix = app.get('dbPrefix'),
+  lean = false,
+  analogId = false
 }) => {
   if (!app || !collectionName || !schema) {
     throw new Error(
@@ -19,6 +21,8 @@ export default ({
     dbUrl,
     dbPrefix,
     schema,
-    getService
+    getService,
+    lean,
+    analogId
   });
 };

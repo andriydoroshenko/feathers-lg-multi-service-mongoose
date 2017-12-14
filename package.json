@@ -54,6 +54,7 @@
     "del-cli": "^0.2.1",
     "feathers-errors": "2.4.0",
     "feathers-mongoose": "3.5.3",
+    "feathers-mongoose-with-analog-id": "^0.0.2",
     "feathers-multi-service": "0.0.4",
     "lodash": "^4.17.4",
     "mongoose": "4.6.5",

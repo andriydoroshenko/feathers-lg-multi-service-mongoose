@@ -59,3 +59,6 @@ Session.vim
 .lock-wscript
 
 lib/
+
+#nyc
+.nyc_output
