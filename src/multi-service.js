@@ -11,7 +11,7 @@ export default ({
 }) => {
   if (!app || !collectionName) {
     throw new Error(
-      'Wrong multi service usage. Required schema, app, collectionName'
+      'Wrong multi service usage. Required app, collectionName'
     );
   }
 
