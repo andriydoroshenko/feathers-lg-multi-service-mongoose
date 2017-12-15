@@ -4,13 +4,12 @@ import getService from './service-proxy';
 export default ({
   app = null,
   collectionName = null,
-  schema = null,
   dbUrl = app.get('dbUrl'),
   dbPrefix = app.get('dbPrefix'),
   lean = false,
   analogId = false
 }) => {
-  if (!app || !collectionName || !schema) {
+  if (!app || !collectionName) {
     throw new Error(
       'Wrong multi service usage. Required schema, app, collectionName'
     );
@@ -20,7 +19,6 @@ export default ({
     collectionName,
     dbUrl,
     dbPrefix,
-    schema,
     getService,
     lean,
     analogId
