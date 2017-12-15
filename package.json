@@ -1,7 +1,7 @@
 {
   "name": "feathers-lg-multi-service-mongoose-model-factory",
   "description": "A Feathers service wrapper of feathers-multi-service package and modelsFactory",
-  "version": "0.4.1",
+  "version": "0.4.2",
   "homepage": "https://github.com/andriydoroshenko/feathers-lg-multi-service-mongoose",
   "main": "lib/",
   "keywords": [
