@@ -59,7 +59,9 @@ class ModelsFactory {
     if (!schema) {
       throw new Error(`Schema for collection ${collectionName} not defined`);
     }
-
+    if (typeof schema === 'function') {
+      return schema(connection, collectionName);
+    }
     return connection.model(collectionName, schema);
   }
 }
