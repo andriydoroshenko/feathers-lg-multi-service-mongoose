@@ -8,7 +8,11 @@ export default ({ defaultLocationGroup = false }) => {
     }
 
     locationGroup = req.get('x-location-group');
-    if (locationGroup) req.feathers.locationGroup = locationGroup;
+    if (locationGroup) {
+      req.feathers.locationGroup = locationGroup;
+    } else {
+      req.feathers.locationGroup = '';
+    }
 
     next();
   };
