@@ -1,6 +1,6 @@
 import _ from 'lodash';
-import mongoose from 'mongoose';
 import buildConnectionUrl from './build-connection-url';
+import connectionsFactory from './connections-factory';
 
 class ModelsFactory {
   constructor() {
@@ -54,7 +54,7 @@ class ModelsFactory {
    */
   createModel(collectionName, locationGroup) {
     const connectionUrl = buildConnectionUrl(this.dbUrl, this.dbPrefix, locationGroup);
-    const connection = mongoose.createConnection(connectionUrl);
+    const connection = connectionsFactory.getConnection(connectionUrl);
     const schema = _.get(this.schemas, collectionName);
     if (!schema) {
       throw new Error(`Schema for collection ${collectionName} not defined`);
