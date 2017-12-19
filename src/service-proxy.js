@@ -18,7 +18,7 @@ export default function (params) {
     let model = modelFactory.getModel(this.collectionName, locationGroup);
 
     // creating a service
-    services[serviceName] = service({ Model: model, lean: params.lean, analogId: params.analogId });
+    services[serviceName] = service({ Model: model, lean: this.lean, analogId: this.analogId });
   }
 
   return services[serviceName];
