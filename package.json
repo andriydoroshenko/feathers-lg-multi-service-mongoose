@@ -57,7 +57,7 @@
     "feathers-mongoose-with-analog-id": "^0.0.2",
     "feathers-multi-service": "0.0.4",
     "lodash": "^4.17.4",
-    "mongoose": "4.13.7",
+    "mongoose": "4.13.11",
     "redrun": "^5.9.11"
   },
   "devDependencies": {
